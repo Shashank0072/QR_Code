@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(238, 174, 202);
+    /* background: linear-gradient(-29deg, rgba(238, 174, 202, 1) 29%, rgba(148, 187, 233, 1) 73%); */
+    margin: 0;
+    padding: 105px;
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 0rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Adds consistent space between inputs and buttons */
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"],
+button[type="button"] {
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    /* Ensures full-width buttons */
+    box-sizing: border-box;
+}
+
+button[type="button"] {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #ff7979;
+}
+
+button[type="submit"] {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #54ff79;
+}
+
+.qr-code {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signature {
+    position: fixed;
+    bottom: -10px;
+    right: 20px;
+    width: 200px;
+    transform: rotate(325deg);
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 5rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+        margin-top: 3rem;
+    }
+}
